@@ -105,6 +105,11 @@ body {
 .icon-background:hover{
   box-shadow: none;
   transform: scale(1.2);
+  cursor: pointer;
+}
+
+.icon-background:active{
+  transform: scale(0.9);
 }
 
 /*center icon*/
