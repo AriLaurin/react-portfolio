@@ -2,13 +2,18 @@ body {
   background-color: #1a1a1a;
 }
 
+::selection{
+  background-color: #419D78;
+  color: white;
+}
+
 .container {
   display: grid;
   gap: 0px 0px;
   grid-template-areas:
     "nav-bar nav-bar nav-bar"
     "left-bar center right-bar"
-    "left-bar footer right-bar";
+    "footer footer footer";
 }
 
 .center {
@@ -16,14 +21,22 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column; 
    }
 
 .nav-bar {
-   grid-area: nav-bar;
+  background-color: #1a1a1a;
+  grid-area: nav-bar;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+
+.footer {
+   grid-area: footer;
+
    }
-
-
-.footer { grid-area: footer; }
 
 .right-bar { grid-area: right-bar; }
 
@@ -36,7 +49,6 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-
   animation: fadeInUp ease 3s;
   -webkit-animation: fadeInUp ease 3s;
   -moz-animation: fadeInUp ease 3s;
@@ -67,22 +79,6 @@ body {
   animation: 
     typewriter 4s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@keyframes typewriter{
-  0%{
-    width: 0;
-    opacity: 1; /* Make text visible as it starts typing */
-  }
-  100%{
-    width: 100%;
-    opacity: 1; /* Keep text visible after typing finishes */
-  }
-}
-
-@keyframes blinkTextCursor{
-  from{border-right-color: #419D78;}
-  to{border-right-color: transparent;}
 }
 
 .button-container{
@@ -162,17 +158,6 @@ body {
   text-decoration: underline;
 }
 
-@keyframes dropdownAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /*Navbar h3*/
 .contact{
   color: white;
@@ -188,6 +173,103 @@ body {
 .contact:hover{
   cursor: pointer;
   color: #419D78;
+}
+
+.card-library{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+}
+
+.card-page-title{
+  color: white;
+  font-family: "Tulpen One";
+  font-size: 5em;
+  text-shadow: 7px 7px 1px black;
+  text-align: center;
+  width: 100%;
+  margin-top: 45%;
+  margin-bottom: 1%;
+}
+
+
+.underline{
+  border-bottom: 2px solid #419D78;
+  margin-bottom: 10%;
+}
+.card-container{
+  background-color: #2b2b2b;
+  width: 700px;
+  height: 250px;
+  display: flex;
+  box-shadow: 0px 8px 16px 1px rgba(0,0,0,0.2);
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+.card-image{
+  width: 40%;
+  height: 100%;
+}
+
+.card-text{
+  padding-left: 1em;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title{
+  color: #419D78;
+  font-family: "Oswald";
+  font-size: 2em;
+  margin-bottom: 0;
+  
+}
+
+.card-p{
+  color: white;
+  font-family: "Oswald";
+  font-size: 1.3em;
+}
+
+@keyframes dropdownAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typewriter{
+  0%{
+    width: 0;
+    opacity: 1; /* Make text visible as it starts typing */
+  }
+  100%{
+    width: 100%;
+    opacity: 1; /* Keep text visible after typing finishes */
+  }
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: #419D78;}
+  to{border-right-color: transparent;}
 }
 
 @keyframes fadeIn {
@@ -214,8 +296,6 @@ body {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-
-
 
 @keyframes fadeInUp {
   0% {opacity:0; transform: translateY(20px);}
