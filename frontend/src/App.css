@@ -2,8 +2,240 @@ body {
   background-color: #1a1a1a;
 }
 
-.home-title {
+.container {
+  display: grid;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav-bar nav-bar nav-bar"
+    "left-bar center right-bar"
+    "left-bar footer right-bar";
+}
+
+.center {
+   grid-area: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+
+.nav-bar {
+   grid-area: nav-bar;
+   }
+
+
+.footer { grid-area: footer; }
+
+.right-bar { grid-area: right-bar; }
+
+.left-bar { grid-area: left-bar; }
+
+/*Center card*/
+.welcome-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
+
+  animation: fadeInUp ease 3s;
+  -webkit-animation: fadeInUp ease 3s;
+  -moz-animation: fadeInUp ease 3s;
+  -o-animation: fadeInUp ease 3s;
+  -ms-animation: fadeInUp ease 3s;
+}
+
+/*center h1*/
+.home-title{
   font-family: "Tulpen One";
   font-size: 5em;
+  text-shadow: 7px 7px 1px black;
+  margin-bottom: 0.2em;
+  user-select: none;
 }
+
+/*center paragraph*/
+.home-p{
+  color:#419D78;
+  text-shadow: 1px 1px 5px black;
+  font-family: "Oswald";
+  font-size: 1.5em;
+  overflow: hidden; /* Hide text initially */
+  border-right: .05em solid #419D78; /* Cursor */
+  user-select: none;
+  white-space: nowrap; /* Keep text in single line */
+  margin: 0 auto; /* Center the text container */
+  animation: 
+    typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  0%{
+    width: 0;
+    opacity: 1; /* Make text visible as it starts typing */
+  }
+  100%{
+    width: 100%;
+    opacity: 1; /* Keep text visible after typing finishes */
+  }
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: #419D78;}
+  to{border-right-color: transparent;}
+}
+
+.button-container{
+  margin-top: 1.5em;
+}
+
+/*center icon background*/
+.icon-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #2b2b2b; /* Slightly lighter color */
+  border-radius: 50%;
+  box-shadow: 5px 5px 1px black;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.icon-background:hover{
+  box-shadow: none;
+  transform: scale(1.2);
+}
+
+/*center icon*/
+.welcome-icon{
+  align-self: center;
+}
+
+.links{
+  position: relative;
+  width: fit-content; /* Adjust the width to fit the content */
+  float: right;
+  box-sizing: content-box;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  padding-right: 4.5em;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #2b2b2b;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 1px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 75%;
+  animation: dropdownAnimation 0.5s ease forwards
+}
+
+.dropdown a {
+  color: white;
+  font-family: "Oswald";
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+}
+
+.dropdown p {
+  color: white;
+  font-family: "Oswald";
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+}
+
+.dropdown a:hover {
+  background-color: #2b2b2b;
+  color: #419D78;
+  text-decoration: underline;
+}
+
+@keyframes dropdownAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Navbar h3*/
+.contact{
+  color: white;
+  font-family: "Oswald";
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  user-select: none;
+}
+
+.contact:hover{
+  cursor: pointer;
+  color: #419D78;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+
+@keyframes fadeInUp {
+  0% {opacity:0; transform: translateY(20px);}
+  100% {opacity:1; transform: translateY(0);}
+}
+
+@-moz-keyframes fadeInUp {
+  0% {opacity:0; -moz-transform: translateY(20px);}
+  100% {opacity:1; -moz-transform: translateY(0);}
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {opacity:0; -webkit-transform: translateY(20px);}
+  100% {opacity:1; -webkit-transform: translateY(0);}
+}
+
+@-o-keyframes fadeInUp {
+  0% {opacity:0; -o-transform: translateY(20px);}
+  100% {opacity:1; -o-transform: translateY(0);}
+}
+
+@-ms-keyframes fadeInUp {
+  0% {opacity:0; -ms-transform: translateY(20px);}
+  100% {opacity:1; -ms-transform: translateY(0);}
+}
+
+
+
