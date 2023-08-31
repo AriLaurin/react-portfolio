@@ -115,10 +115,9 @@ const Home = () => {
                   group to take on cyber security operations. It consists of
                   people who share the same interest in wanting to partake in
                   cyber security operations, meaning that as a group, we work
-                  together to achieve odd-jobs.
-                  It is my goal with this group to expand my knowledge and
-                  skills in cyber-sec operations and to grow a network with
-                  people that have similar interests.
+                  together to achieve odd-jobs. It is my goal with this group to
+                  expand my knowledge and skills in cyber-sec operations and to
+                  grow a network with people that have similar interests.
                 </p>
               </div>
             </div>
