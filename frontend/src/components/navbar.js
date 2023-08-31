@@ -11,6 +11,7 @@ const Navbar = () => {
 {isOpen && (
   <div className="dropdown">
     <a href="https://github.com/AriLaurin">Github - AriLaurin</a>
+    <a href="https://www.linkedin.com/in/arijus-laurin-837008223/">LinkedIn - Arijus Laurin</a>
     <p className="dropdown-p">Mail - arijuslau@gmail.com</p>
   </div>
 )}

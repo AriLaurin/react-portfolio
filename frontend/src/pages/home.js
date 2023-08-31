@@ -65,9 +65,9 @@ const Home = () => {
                 <p className="card-p">
                   I studied IT & Media production in my freshman year of
                   highschool, then followed the IT-path the second year,
-                  graduating as a Web-Developer. In addition to this I work as a
-                  full-stack developer and currently study cyber security
-                  alongside it.
+                  graduating as a Web-Developer. Afterwards I took an
+                  apprenticeship as a full-stack developer and currently study
+                  cyber security alongside it.
                 </p>
               </div>
             </div>
@@ -83,10 +83,42 @@ const Home = () => {
                 <h2 className="card-title">/ / About my projects</h2>
                 <p className="card-p">
                   Most of my projects are done to push myself forward into the
-                  fields I study. For example, to develop a webpage to display
-                  my work, creating various scripts and code to expand my
-                  utility and tinkering with different machines to execute my
-                  projects.
+                  fields I study. For example, I develop a webpage to display my
+                  work, I create various scripts and code to expand my utility
+                  and tinker with different machines to execute my projects.
+                </p>
+              </div>
+            </div>
+
+            {/*end of card-warpper*/}
+          </div>
+
+          {/*end of card library*/}
+        </div>
+        {/*END OF DETAILS*/}
+
+        <h1 className="card-page-title">Projects & Events</h1>
+        <div className="underline" id="details"></div>
+        <div className="PE-library">
+          <div className="PE-wrapper">
+            <div className="PE-container">
+              <img
+                src="/img/bbpwybg.png"
+                type="image/png"
+                alt="About me"
+                className="PE-image"
+              />
+              <div className="PE-text">
+                <h2 className="PE-title">/ / Project Blackbird</h2>
+                <p className="PE-p">
+                  In an effort to make my dream into reality, I founded this
+                  group to take on cyber security operations. It consists of
+                  people who share the same interest in wanting to partake in
+                  cyber security operations, meaning that as a group, we work
+                  together to achieve odd-jobs.
+                  It is my goal with this group to expand my knowledge and
+                  skills in cyber-sec operations and to grow a network with
+                  people that have similar interests.
                 </p>
               </div>
             </div>
