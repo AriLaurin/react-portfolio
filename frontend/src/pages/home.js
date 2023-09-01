@@ -37,7 +37,7 @@ const Home = () => {
           <div className="card-wrapper">
             <div className="card-container">
               <img
-                src="/img/aboutme.gif"
+                src={process.env.PUBLIC_URL + "/img/aboutme.gif"}
                 type="video/gif"
                 alt="About me"
                 className="card-image"
@@ -55,7 +55,7 @@ const Home = () => {
 
             <div className="card-container">
               <img
-                src="/img/aboutme.gif"
+                src={process.env.PUBLIC_URL + "/img/aboutme.gif"}
                 type="video/gif"
                 alt="About me"
                 className="card-image"
@@ -74,7 +74,7 @@ const Home = () => {
 
             <div className="card-container">
               <img
-                src="/img/aboutme.gif"
+                src={process.env.PUBLIC_URL + "/img/aboutme.gif"}
                 type="video/gif"
                 alt="About me"
                 className="card-image"
@@ -103,7 +103,7 @@ const Home = () => {
           <div className="PE-wrapper">
             <div className="PE-container">
               <img
-                src="/img/bbpwybg.png"
+                src={process.env.PUBLIC_URL + "/img/bbpwybg.png"}
                 type="image/png"
                 alt="About me"
                 className="PE-image"
