@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.6a1baa7e.css",
-    "main.js": "/react-portfolio/static/js/main.97147649.js",
-    "index.html": "/react-portfolio/index.html",
-    "main.6a1baa7e.css.map": "/react-portfolio/static/css/main.6a1baa7e.css.map",
-    "main.97147649.js.map": "/react-portfolio/static/js/main.97147649.js.map"
+    "main.css": "https://arilaurin.github.io/react-portfolio/static/css/main.6a1baa7e.css",
+    "main.js": "https://arilaurin.github.io/react-portfolio/static/js/main.6cc87a33.js",
+    "index.html": "https://arilaurin.github.io/react-portfolio/index.html",
+    "main.6a1baa7e.css.map": "https://arilaurin.github.io/react-portfolio/static/css/main.6a1baa7e.css.map",
+    "main.6cc87a33.js.map": "https://arilaurin.github.io/react-portfolio/static/js/main.6cc87a33.js.map"
   },
   "entrypoints": [
     "static/css/main.6a1baa7e.css",
-    "static/js/main.97147649.js"
+    "static/js/main.6cc87a33.js"
   ]
 }
