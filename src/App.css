@@ -317,20 +317,7 @@ body {
 
   /*center paragraph*/
   .home-p {
-    color: #419d78;
-    text-shadow: 1px 1px 5px black;
-    font-family: "Oswald";
-    font-size: 1.5em;
-    text-overflow: ellipsis; /* Add ellipsis (...) for overflow */
-    border-right: 0.05em solid #419d78; /* Cursor */
-    user-select: none;
-    margin: 0 auto; /* Center the text container */
-    align-items: center; /* Added to center text vertically */
-    animation: typewriter 4s steps(44) 1s 1 normal both,
-      blinkTextCursor 500ms steps(44) infinite normal;
-    word-wrap: break-word; /* Add this line to wrap the text */
-    width: 100%; /* Set the width to 100% to allow wrapping */
-    white-space: normal; /* Add this line to allow wrapping */
+    display: none;
   }
 
   .card-library {
