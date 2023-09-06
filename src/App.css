@@ -30,6 +30,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 2;
+  display: flex; /* Display items in a row */
+  justify-content: space-between; /* Distribute items evenly along the row */
+  align-items: center; /* Center items vertically */
 }
 
 .footer {
@@ -112,6 +115,25 @@ body {
 /*center icon*/
 .welcome-icon {
   align-self: center;
+}
+
+.lng-btn-cont {
+  display: flex;
+  align-items: center;
+  padding-left: 4.5em;
+}
+
+.lng-btn {
+  background-color: #1a1a1a;
+  color: white;
+  border: none; /* Remove border */
+  font-family: "Oswald";
+  font-size: 1.2em;
+}
+
+.lng-btn:hover {
+  color: #419d78;
+  cursor: pointer;
 }
 
 .links {
