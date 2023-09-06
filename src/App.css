@@ -456,6 +456,10 @@ body {
     padding-right: 2.5em;
   }
 
+  .lng-btn-cont {
+    padding-left: 2.5em;
+  }
+
   /*center h1*/
   .home-title {
     font-family: "Tulpen One";
