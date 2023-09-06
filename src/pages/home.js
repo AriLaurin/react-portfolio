@@ -3,12 +3,6 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../components/navbar";
 import { Link as ScrollLink } from "react-scroll";
 import { useTranslation, Trans } from "react-i18next";
-import i18n from "../i18n";
-
-const lngs = {
-  en: { nativeName: "English" },
-  no: { nativeName: "Norsk" },
-};
 
 const Home = () => {
   const { t } = useTranslation();
