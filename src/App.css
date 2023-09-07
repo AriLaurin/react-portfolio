@@ -457,7 +457,7 @@ body {
   }
 
   .lng-btn-cont {
-    padding-left: 2.5em;
+    padding-left: 2em;
   }
 
   /*center h1*/
@@ -476,6 +476,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
+    margin-bottom: 80%;
     animation: fadeInUp ease 3s;
     -webkit-animation: fadeInUp ease 3s;
     -moz-animation: fadeInUp ease 3s;
@@ -563,8 +564,8 @@ body {
 
   .PE-container {
     background-color: #2b2b2b;
-    width: 380px;
-    height: 850px;
+    width: 350px;
+    height: 700px;
     display: flex;
     flex-direction: column; /* Change flex-direction to column */
     box-shadow: 0px 8px 16px 1px rgba(0, 0, 0, 0.2);
@@ -578,8 +579,7 @@ body {
   .PE-image {
     padding-top: 1em;
     width: 100%;
-    height: 50%;
-    object-fit: contain;
+    height: 35%;
     object-position: center;
   }
 
@@ -591,7 +591,7 @@ body {
   .PE-title {
     color: #419d78;
     font-family: "Oswald";
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 0;
     padding-left: 1em;
   }
@@ -599,7 +599,7 @@ body {
   .PE-p {
     color: white;
     font-family: "Oswald";
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 1em;
   }
 }
